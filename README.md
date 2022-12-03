@@ -1,10 +1,10 @@
 # csgo-hops
 A CSGO bunny-hop cheat compilied and randomized via a python script
 
-* Features
+## Features
 * Bunny Hop
 
-* How to compile
+## How to compile
 ``` bash
 python3 compile_cheats.py
 
@@ -14,5 +14,5 @@ a123sadnjybgbe: csgo_hops.dll
 
 ```
 
-# How to inject
+## How to inject
 Use the "manual map" setting when injecting the DLL 
