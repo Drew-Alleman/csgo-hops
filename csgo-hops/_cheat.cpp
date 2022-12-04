@@ -6,6 +6,8 @@ ptrdiff_t dwForceJump = 0x52B9C0C;
 ptrdiff_t dwLocalPlayer = 0xDE8964;
 ptrdiff_t m_fFlags = 0x104;
 
+std::set<int> validMoves = { 257 , 512, 262, 263, 261 } ;
+
 class LocalPlayer {
 
 private:
@@ -15,16 +17,14 @@ private:
 public:
 	bool bhop() {
 		int move = moveType();
-		if (move == 257 || move == 512 || move == 262 || move == 263 || move == 261) {
+		if (validMoves.find(move) != validMoves.end()) {
 			return jump();
 		}
 		return false;
 	}
 
 	bool jump() {
-		*reinterpret_cast<int*>(gameAddress + dwForceJump) = 5;
-		Sleep(2);
-		*reinterpret_cast<int*>(gameAddress + dwForceJump) = 4;
+		*reinterpret_cast<int*>(gameAddress + dwForceJump) = 6;
 		return true;
 	}
 
@@ -64,7 +64,7 @@ void enableBhop() {
 		}
 		if (GetAsyncKeyState(VK_END))
 			break;
-		else if (GetAsyncKeyState(VK_SPACE) and localPlayer.bhop()) {
+		else if ((GetAsyncKeyState(VK_SPACE) & 0x8000) and localPlayer.bhop()) {
 			continue;
 		} 
 		Sleep(1);

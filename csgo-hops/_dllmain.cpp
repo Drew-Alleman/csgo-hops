@@ -1,8 +1,4 @@
-#include <Windows.h>
 #include "cheat.h"
-#include <list>
-#include <iostream>
-
 
 DWORD WINAPI MainThread(HMODULE hModule) {
     enableBhop();
