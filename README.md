@@ -5,7 +5,7 @@ A CSGO bunny-hop cheat compilied and randomized by a python script
 ![preview](preview.gif)
 
 ## Features
-* Bunny Hop
+This is just a bunny hop cheat. Press END to stop the cheat.
 
 ## How to compile
 ``` bash
