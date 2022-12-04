@@ -3,6 +3,7 @@
 		<ProjectsToBuild Include="**\*proj" Exclude="$(MSBuildProjectFile)"/>
 	</ItemGroup>
 	<PropertyGroup>
+		<PlatformTarget>x86</PlatformTarget>
 		<Configuration>Release</Configuration>
 	</PropertyGroup>
 	<Target Name="Build">

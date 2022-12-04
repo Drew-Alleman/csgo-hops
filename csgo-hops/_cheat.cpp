@@ -2,8 +2,8 @@
 #include "cheat.h"
 
 LPCWSTR DLL_NAME = L"client.dll";
-ptrdiff_t dwForceJump = 0x52B8BFC;
-ptrdiff_t dwLocalPlayer = 0xDE7964;
+ptrdiff_t dwForceJump = 0x52B9C0C;
+ptrdiff_t dwLocalPlayer = 0xDE8964;
 ptrdiff_t m_fFlags = 0x104;
 
 class LocalPlayer {
@@ -53,7 +53,7 @@ public:
 };
 
 
-void cheat::enableBhop() {
+void enableBhop() {
 	LocalPlayer localPlayer = LocalPlayer();
 	while (true)
 	{

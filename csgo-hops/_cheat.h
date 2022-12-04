@@ -3,7 +3,4 @@
 #include <iostream>
 #include "Windows.h"
 
-namespace cheat {
-	void enableBhop();
-
-}
+void enableBhop();

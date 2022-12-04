@@ -5,7 +5,7 @@
 
 
 DWORD WINAPI MainThread(HMODULE hModule) {
-    cheat::enableBhop();
+    enableBhop();
 	return 1;
 }
 
