@@ -1,5 +1,8 @@
 # csgo-hops
 A CSGO bunny-hop cheat compilied and randomized by a python script
+<br>
+## Showcase
+![preview](preview.gif)
 
 ## Features
 * Bunny Hop
