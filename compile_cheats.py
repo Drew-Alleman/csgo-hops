@@ -9,7 +9,7 @@ import re
 BLOCKSIZE = 65536
 
 generate_string = lambda: ''.join(random.choices(string.ascii_uppercase + string.ascii_lowercase, k=12))
-dll_location = "\\x64\\Release\\csgo-hops.dll"
+dll_location = "\\Release\\csgo-hops.dll"
 
 # All variables used in the bunny hop cheat
 variables = {
@@ -77,6 +77,7 @@ class CheatCompiler:
         :param variables: Cheat source variables to randomize (format {old_name:new_name})
         :param export_location: DLL/EXE export location to look for the file
         :param files: a dict containing the files the pull the source from and the file to create the randomized source under
+        :param arch: PC architecture to export the DLL/exe to
         """
         self.project_directory = project_directory
         self.variables = variables
@@ -88,7 +89,7 @@ class CheatCompiler:
         """
         Compiles the cheat into a DLL
         """
-        os.system(f"MSBuild.exe {self.project_directory} /property:Configuration=Release")
+        os.system(f"MSBuild.exe {self.project_directory} /t:build /p:Configuration=Release;Platform=x86")
     
     def randomize(self) -> bool:
         """ Randomizes the variables accross all files in the cheat source
