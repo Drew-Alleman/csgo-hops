@@ -28,6 +28,8 @@ variables = {
     "updateLocalPlayerAddress":generate_string(),
     "isValid":generate_string(),
     "getAddresses":generate_string(),
+    "enableBhop":generate_string(),
+    "validMoves":generate_string()
 }
 
 
