@@ -1,14 +1,8 @@
 # csgo-hops
 A CSGO bunny-hop cheat compilied and obfuscated via a python script
 
-## Why?
-Obfuscating the variables names with random strings allows a unique file hash on every compile. Making it harder for VAC to spot.
-
 ## Showcase
 ![preview](preview.gif)
-
-## Features
-This is just a bunny hop cheat. Press END to stop the cheat.
 
 ## How to compile
 ``` bash
@@ -42,3 +36,20 @@ Time Elapsed 00:00:03.89
 
 ## How to inject
 Use the "manual map" setting when injecting the DLL 
+
+## Features
+This is just a bunny hop cheat. Press END to stop the cheat.
+
+## Why?
+Obfuscating the variables names with random strings allows a unique file hash on every compile. Making it harder for VAC to spot.
+
+
+## Where to update signatures
+If the cheat is crashing please try updating the signatures in _cheat.cpp.
+```c++
+ptrdiff_t dwForceJump = 0x52B9C0C;
+ptrdiff_t dwLocalPlayer = 0xDE8964;
+ptrdiff_t m_fFlags = 0x104;
+```
+
+
