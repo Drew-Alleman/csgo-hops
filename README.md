@@ -13,26 +13,31 @@ This is just a bunny hop cheat. Press END to stop the cheat.
 ## How to compile
 ``` bash
 python3 compile_cheats.py -D C:\Users\DrewQ\source\repos\csgo-hops\
-
-  9 of 10 functions (90.0%) were compiled, the rest were copied from previous compilation.
-    7 functions were new in current compilation
+...
+   /IMPLIB:"C:\Users\DrewQ\Desktop\csgo-hops-main\Release\csgo-hops.lib" /MACHINE:X86 /SAFESEH /DLL Release\cheat.obj
+  Release\dllmain.obj
+  Release\_cheat.obj
+  Generating code
+  16 of 123 functions (13.0%) were compiled, the rest were copied from previous compilation.
+    10 functions were new in current compilation
     1 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
-  csgo-hops.vcxproj -> C:\Users\DrewQ\source\repos\csgo-hops\x64\Release\csgo-hops.dll
+  csgo-hops.vcxproj -> C:\Users\DrewQ\Desktop\csgo-hops-main\Release\csgo-hops.dll
 FinalizeBuildStatus:
-  Deleting file "x64\Release\csgo-hops.tlog\unsuccessfulbuild".
-  Touching "x64\Release\csgo-hops.tlog\csgo-hops.lastbuildstate".
-Done Building Project "C:\Users\DrewQ\source\repos\csgo-hops\csgo-hops\csgo-hops.vcxproj" (default targets).
+  Deleting file "Release\csgo-hops.tlog\unsuccessfulbuild".
+  Touching "Release\csgo-hops.tlog\csgo-hops.lastbuildstate".
+Done Building Project "C:\Users\DrewQ\Desktop\csgo-hops-main\csgo-hops\csgo-hops.vcxproj" (default targets).
 
-Done Building Project "C:\Users\DrewQ\source\repos\csgo-hops\csgo-hops.sln" (default targets).
+Done Building Project "C:\Users\DrewQ\Desktop\csgo-hops-main\csgo-hops.sln" (build target(s)).
+
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:02.72
-[*] SHA1: 8d79c80a02aba329a266829e9380fe03364cce1c | C:\Users\DrewQ\source\repos\csgo-hops\\x64\Release\csgo-hops.dll
-[*] Was compiled @ Sat Dec  3 11:03:07 2022
+Time Elapsed 00:00:03.89
+[*] SHA1: d680917df2449546b04cb15e96d2e3a9266c6d77 | C:\Users\DrewQ\Desktop\csgo-hops-main\Release\csgo-hops.dll
+[*] Was compiled @ Sun Dec  4 14:57:38 2022
 ```
 
 ## How to inject
