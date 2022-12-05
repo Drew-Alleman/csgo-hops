@@ -1,6 +1,9 @@
 # csgo-hops
-A CSGO bunny-hop cheat compilied and randomized by a python script
-<br>
+A CSGO bunny-hop cheat compilied and obfuscated by a python script
+
+## Why?
+Obfuscating the variables names with random strings allows a unique file hash on every compile. Making it harder for VAC to spot.
+
 ## Showcase
 ![preview](preview.gif)
 
