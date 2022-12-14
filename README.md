@@ -1,5 +1,5 @@
 # csgo-hops
-A CSGO bunny-hop cheat compilied and obfuscated with python
+A CSGO bunny-hop cheat obfuscated with python and compiled with msbuild.
 
 ## Showcase
 ![preview](preview.gif)
